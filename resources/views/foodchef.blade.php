@@ -1,43 +1,71 @@
- <!-- ***** Chefs Area Starts ***** -->
-    <section class="section" id="chefs">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 offset-lg-4 text-center">
-                    <div class="section-heading">
-                        <h6>Our Chefs</h6>
-                    </div>
-                </div>
-            </div>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/card.scss">
+    <title>Document</title>
 
-           
+</head>
+<body>
 
-            <div class="row">
 
+
+
+
+
+
+
+ <!-- ***** Menu Area Starts ***** -->
+ <!-- <section class="section" id="menu">
+     <div class="menu-item-carousel">
+         <div class="col-lg-12">
+             <div class="owl-menu-item owl-carousel"> -->
+                 
+                     
                  @foreach($data2 as $data2)
+                 
+                     
+                     @csrf
+                     
+                     <div class="item">
+                      
+<div class='card'>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="chefimage/{{$data2->image}}"  alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{$data2->name}}</h5>
+    <h5 class="card-text">{{$data2->speciality}}</h5>
+  </div>
+</div>
+ 
 
-                <div class="col-lg-4">
-                    <div class="chef-item">
-                        <div class="thumb">
-                            <div class="overlay"></div>
-                            <ul class="social-icons">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            </ul>
-                            <img height="200" width="200" src="chefimage/{{$data2->image}}" alt="Chef #1">
-                        </div>
-                        <div class="down-content">
-                            <h4>{{$data2->name}}</h4>
-                            <span>{{$data2->speciality}}</span>
-                        </div>
-                    </div>
+
+
+
+
+</div>
+
+
+
+                        
+                    @endforeach
+                    <br>
+                    <br>
+
+
+
+
+
+                    <!-- </div>
                 </div>
-
-
-                @endforeach
-            
-               
             </div>
         </div>
-    </section>
-    <!-- ***** Chefs Area Ends ***** -->
+    </section> -->
+</div>
+    <!-- ***** Menu Area Ends ***** -->
+</body>
+</html>
+ <!-- ***** Chefs Area Starts ***** -->
