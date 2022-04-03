@@ -42,6 +42,11 @@ class HomeController extends Controller
     public function reservation(){
         return view("reservation");
     }
+    
+    public function viewchefs(){
+                    $data2=foodchef::all();
+        return view("foodchef",compact("data2"));
+    }
 
 
  
